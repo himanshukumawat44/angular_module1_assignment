@@ -1,9 +1,10 @@
 (function(){
-    angular.module("appModule",[])
-    .controller("appController",appController);
+    angular.module("LunchCheck",[])
+    .controller("LunchCheckController",LunchCheckController);
 
+    LunchCheckController.$inject=['$scope'];
 
-    function appController($scope){
+    function LunchCheckController($scope){
         $scope.name="";
         $scope.message="";
         $scope.showMessage=function(){
